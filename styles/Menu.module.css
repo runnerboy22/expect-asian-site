@@ -1,0 +1,197 @@
+.menu {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.menu .promos {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.menu .promos img {
+  max-width: 600px;
+}
+.menu .happyHour {
+  text-align: center;
+  font-size: 24px;
+  color: orange;
+}
+.menu .happyHour span {
+  font-weight: bold;
+}
+.menu .happyHour h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.columnWrapper {
+  display: flex;
+}
+.columnWrapper .Column {
+  flex: 50%;
+  margin: 20px;
+}
+.columnWrapper .MenuSection .allergyWarning {
+  color: red;
+  font-size: 15px;
+}
+.columnWrapper .Drinks ul.drinkPhotos,
+.columnWrapper .Food ul.foodPhotos {
+  display: flex;
+  padding: 0px;
+}
+.columnWrapper .Drinks ul.drinkPhotos li,
+.columnWrapper .Food ul.foodPhotos li {
+  list-style: none;
+}
+.columnWrapper .Drinks ul.drinkPhotos li img,
+.columnWrapper .Food ul.foodPhotos li img {
+  max-width: 100%;
+}
+.columnWrapper .Drinks,
+.Menu .Food {
+  width: 50%;
+}
+.columnWrapper .Column .h4 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  background-color: chocolate;
+  padding: 5px;
+  margin: 0;
+}
+.columnWrapper .Column .h4 span.goToFoodMenu,
+.columnWrapper .Column .h4 span.goToDrinkMenu {
+  display: none;
+}
+
+.MenuSection .accordion .card {
+  background-color: transparent;
+  border: none;
+  color: white !important;
+}
+
+.MenuSection .accordion .card .ch {
+  background-color: darkcyan;
+  color: white !important;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.MenuSection .accordion .card .ch .sectionOpened,
+.MenuSection .accordion .card .ch .sectionClosed {
+  display: flex;
+  justify-content: space-between;
+}
+.MenuSection .accordion .card .ch .sectionOpened::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d8";
+}
+
+.MenuSection .accordion .card .ch .sectionClosed::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0d7";
+}
+
+.MenuSection .accordion .card .ch h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.MenuSection .accordion .card .card-body {
+  padding: 0;
+}
+
+.columnWrapper .Column .menuItemDetail ul {
+  margin: 5px;
+  padding: 0;
+  display: flex;
+}
+
+.columnWrapper .Column .menuItemDetail ul li {
+  list-style: none;
+  display: inline-block;
+}
+.columnWrapper .Column .menuItemDetail ul li:first-child {
+  flex: 0.9;
+  font-weight: bold;
+}
+.columnWrapper .Column .menuItemDetail ul li:first-child .description {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+}
+.columnWrapper .Column .menuItemDetail ul li:first-child .options {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+}
+.columnWrapper .Column .menuItemDetail ul li:last-child {
+  flex: 0.1;
+  text-align: right;
+}
+
+@media only screen and (max-width: 450px) {
+  .menu {
+    max-width: 150;
+    padding: 5px;
+  }
+  .menu .promos img {
+    max-width: 95%;
+    margin-top: 10px;
+  }
+  .menu .happyHour {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .columnWrapper {
+    display: block;
+  }
+  .columnWrapper .Column {
+    margin: 0;
+  }
+  .columnWrapper .Column .h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .columnWrapper .Column .h4 span.goToFoodMenu,
+  .columnWrapper .Column .h4 span.goToDrinkMenu {
+    display: block;
+  }
+  .columnWrapper .Column .h4 span.goToFoodMenu .a,
+  .columnWrapper .Column .h4 span.goToDrinkMenu .a {
+    font-size: 10px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: blanchedalmond;
+  }
+  .columnWrapper .Column .h4 span.goToFoodMenu .a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f063";
+    margin-right: 5px;
+  }
+  .columnWrapper .Column .h4 span.goToDrinkMenu .a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f062";
+    margin-right: 5px;
+  }
+  .columnWrapper .Column .h4 span.goToFoodMenu .a:hover,
+  .columnWrapper .Column .h4 span.goToDrinkMenu .a:hover {
+    text-decoration: none;
+  }
+  .columnWrapper .Column h5 {
+    font-size: 16px;
+  }
+  .columnWrapper .Drinks,
+  .Menu .Food {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.pages {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Contact {
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+.Contact a {
+  color: white;
+  text-decoration: none;
+}
+.Contact a:hover {
+  color: orange;
+}
+.Contact .SocialMediaIcons .InstagramIcon svg {
+  color: #bc2a8d;
+  height: 20px;
+}
+.Contact .SocialMediaIcons .FacebookIcon svg {
+  color: #3b5998;
+  height: 20px;
+}
+.Contact .SocialMediaIcons .YelpIcon svg {
+  color: #c41200;
+  height: 20px;
+}
+.Contact .SocialMediaIcons svg {
+  margin: 10px;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white !important;
+
+  background-color: black !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

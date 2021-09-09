@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.header {
+    background-color:black;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .header ul li {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: inline-block;
+  }
+  .header ul li a {
+    font-family: 'Monoton', cursive;
+    color: #CCC;
+    font-size: 20px;
+  }
+  .header ul li a:hover, .header ul li a.active {
+    color: #f3a683;
+    text-decoration: none;
+  }
+
+  .logo img {
+      width: 250px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    .header ul li a {
+      font-size: 14px;
+    }
+  }

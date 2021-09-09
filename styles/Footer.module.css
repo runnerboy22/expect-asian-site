@@ -1,0 +1,15 @@
+.footer {
+  background-color: #ccc;
+  text-align: center;
+  color: black;
+  position: relative;
+
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.footer section:first-child {
+  font-weight: bold;
+  font-style: italic;
+  color: darkolivegreen;
+}

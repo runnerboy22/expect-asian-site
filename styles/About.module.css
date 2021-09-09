@@ -1,0 +1,52 @@
+.about img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.about .aboutContentWrapper {
+  display: flex;
+}
+.about .aboutText {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 10px 10px;
+  flex: 0.8;
+}
+.about .aboutText p {
+  font-size: 24px;
+}
+
+.about .sideBar {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  flex: 0.2;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+
+.about .sideBar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 8rem;
+  transform: translate(-50%, -50%);
+  color: fuchsia;
+}
+@media only screen and (max-width: 450px) {
+  .about {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .about .aboutContentWrapper {
+    display: block;
+  }
+
+  .about .aboutText p {
+    font-size: 20px;
+  }
+  .about .sideBar {
+    display: none;
+  }
+}

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Frijole&display=swap");
+
+.specialAd {
+  font-size: 26px;
+  text-align: center;
+  background-color: brown;
+  padding: 5px 0 10px;
+  font-style: italic;
+  cursor: pointer;
+  font-family: "Frijole", cursive;
+}
+.specialAd a {
+  color: white;
+}
+.specialAd a:hover {
+  color: white;
+  text-decoration: none;
+}
+.specialAd:hover {
+  opacity: 0.7;
+}
+.heroImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.heroImageContainer .img {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+  align-self: flex-start;
+}
+.heroImageContainer .heroImageLeft,
+.heroImageContainer .heroImageRight {
+  display: flex;
+  flex: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-size: cover;
+  position: relative;
+}
+.heroImageContainer .heroImageLeft {
+  background-image: url("../public/images/food-momo.jpg");
+}
+.heroImageContainer .heroImageRight {
+  background-image: url("../public/images/drink-violet-dreams-redbg.jpg");
+}
+
+.heroImageContainer h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: hard-light;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.heroImageContainer h2 a {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 450px) {
+  .heroImageContainer {
+    display: block;
+  }
+  .heroImageContainer .heroImageLeft .img {
+    max-width: 100%;
+  }
+  .heroImageContainer .heroImageRight .img {
+    max-width: 100%;
+  }
+  .specialAd {
+    font-size: 16px;
+  }
+}
